@@ -1,13 +1,16 @@
-# Titanic Survival Prediction
+# COVID-19 High Fatality Classification
 
 Author: Clay Tryon
 
 ## Project Description
-This project analyzes passenger data from the RMS Titanic to determine which features most influenced survival. The goal is to predict whether a passenger survived based on attributes like class, age, fare, sex, and family aboard. This is achieved using machine learning models to classify each passenger as survived or not. I also wanted to determine what the strongest predictive factors were in a persons survival. 
+This project analyzes COVID-19 statistics by country to determine which factors are most predictive of a country having a high case fatality rate (CFR). The goal is to classify whether a country's fatality rate is considered high based on features such as total confirmed cases, deaths, recoveries, active cases, and recent changes. The dataset was obtained from a Kaggle COVID-19 global statistics repository.
 
-## Machine Learning Algorithm Used
-- Decision Tree Classifier
-- Random Forest Classifier (with class balancing and hyperparameter tuning)
+The project explores and evaluates several classification models to identify the strongest predictors and determine the most accurate model for this imbalanced classification problem.
+
+## Machine Learning Algorithms Used
+- Decision Tree Classifier (with hyperparameter tuning)
+- Random Forest Classifier (with class balancing and tuning)
+- XGBoost Classifier (with scale_pos_weight adjustment and tuning)
 
 ## Machine Learning Libraries Used
 - pandas
@@ -15,3 +18,4 @@ This project analyzes passenger data from the RMS Titanic to determine which fea
 - matplotlib
 - seaborn
 - scikit-learn
+- xgboost
